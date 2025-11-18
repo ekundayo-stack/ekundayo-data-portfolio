@@ -15,7 +15,7 @@ The analysis is based on a cleaned dataset containing player Elo, flagged engine
 👉 [Read thesis_summary.md](thesis_summary.md)
 
 ### 📚 **Full Thesis PDF**
-👉 [Download thesis_full.pdf](thesis_full.pdf)
+👉 [Download thesis_full.pdf](/msc_final_thesis.docx)
 
 ---
 
