@@ -22,13 +22,13 @@ The analysis is based on a cleaned dataset containing player Elo, flagged engine
 ## 📂 Dataset
 
 ### 📄 Sample Dataset (included in repo)
-👉 [sample_dataset.csv](data/sample_games_dataset.csv)
+👉 [sample_dataset.csv](dataset/sample_games_dataset.csv)
 
 ### 🌐 Full Original Dataset  
 The original dataset is too large for GitHub.  
 Download link can be found here:
 
-👉 [data/links.txt](data/links.txt)
+👉 [data/links.txt](dataset/links.txt)
 
 ---
 
