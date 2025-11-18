@@ -83,3 +83,27 @@ Kaggle Dataset
 
 ### K-Means Clustering — Elo Distribution
 ![KMeans](visuals/k_means_clustering_elo_white_elo_black.png)
+
+chess_anomaly_detection_thesis/
+│
+├── README.md
+│
+├── thesis_summary.md
+├── thesis_full.pdf                     # optional
+│
+├── notebooks/
+│   └── chess_anomaly_detection.ipynb
+│
+├── data/
+│   ├── sample_dataset.csv
+│   └── links.txt
+│
+├── visuals/
+│   ├── isolation_forest_anomaly_distribution.png
+│   ├── kmeans_cluster_scatter.png
+│   ├── elo_white_vs_black_scatter.png
+│   └── other_visual_files.png
+│
+└── src/                                # optional (scripts)
+    └── anomaly_detection.py            # optional
+
