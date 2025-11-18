@@ -1,109 +1,51 @@
-# Anomaly Detection in Online Chess
-📘 Notebook
+# ♟️ Chess Anomaly Detection Using Unsupervised Machine Learning  
+### *Master’s Thesis Project – Ekundayo Onifade*
 
-Click below to view the full implementation:
+This project explores whether **unsupervised machine learning**—specifically **Isolation Forest** and **K-Means Clustering**—can detect anomalous or potentially engine-assisted gameplay in online chess matches.  
+The analysis is based on a cleaned dataset containing player Elo, flagged engine-like moves, and game outcomes.
 
-👉 View the Analysis Notebook
+---
 
-📁 Dataset
-Dataset Folder in Repository
+## 📘 Project Files
 
-👉 Open Dataset Folder
+### 🔍 **Notebook (Full Implementation)**
+👉 [Open Notebook](notebooks/chess_anomaly_detection.ipynb)
 
-Original Source Dataset
+### 📝 **Detailed Thesis Summary**
+👉 [Read thesis_summary.md](thesis_summary.md)
 
-This dataset is publicly available on Kaggle:
-👉 !Link provided inside(dataset/links.txt)
-(projects/chess-anomaly-detection/dataset/sample_games_dataset.csv)
+### 📚 **Full Thesis PDF** (optional)
+👉 [Download thesis_full.pdf](thesis_full.pdf)
 
-📊 Key Visualisations
+---
 
-Below are the three most important visual insights generated during the project:
+## 📂 Dataset
 
-1. Isolation Forest – Anomaly Score Distribution
+### 📄 Sample Dataset (included in repo)
+👉 [sample_dataset.csv](data/sample_dataset.csv)
 
-Shows the right-skewed anomaly score distribution indicating most games are normal with a detectable anomalous tail.
-👉 View Visual
+### 🌐 Full Original Dataset  
+The original dataset is too large for GitHub.  
+Download link can be found here:
 
-2. K-Means Cluster Scatter Plot
+👉 [data/links.txt](data/links.txt)
 
-Shows Elo-driven clusters and highlights the algorithm’s limitation in detecting cheats based purely on clustering.
-👉 View Visual
-
-3. Elo White vs Elo Black Scatter (with Anomaly Scores)
-
-Displays how Elo similarity influences anomaly likelihood, with outliers signalling unusual matchups.
-👉 View Visual
-
-📄 Detailed Thesis Summary
-
-For a deeper summary of the study, methodology, results and academic insights:
-
-👉 Read Full Thesis Summary
-
-📚 Full Thesis (PDF)
-
-(Only include this if you uploaded it)
-
-👉 Download Full Thesis
-
-🧠 Key Findings (Short Version)
-
-Isolation Forest is highly effective at detecting anomalies in chess datasets
-
-Flagged moves (white/black) are the strongest predictors
-
-A threshold of ~25 flagged moves strongly indicates potential cheating
-
-Elo influences anomalies—but in complex, non-linear ways
-
-K-Means shows poor performance in identifying cheating patterns
-
-Unsupervised methods provide solid results even without labelled data
-
-🛠 Technologies Used
-
-Python, Pandas, NumPy
-
-Scikit-Learn (IsolationForest, KMeans)
-
-Matplotlib
-
-Google Colab
-
-Kaggle Dataset
+---
 
 ## 📊 Key Visualisations
 
-### Isolation Forest — Elo White vs Elo Black
-![Elo Comparison](visuals/isolation_forest_elo_white_v_elo_black.png)
+Below are the three most important visualisations generated during this project.
 
-### Anomaly Score Distribution
-![Anomaly Score Distribution](visuals/isolation_forest_anomaly_score_distribution.png)
+### 1️⃣ Isolation Forest — Anomaly Score Distribution  
+👉 [View Image](visuals/isolation_forest_anomaly_distribution.png)
 
-### K-Means Clustering — Elo Distribution
-![KMeans](visuals/k_means_clustering_elo_white_elo_black.png)
+### 2️⃣ K-Means Cluster Scatter Plot  
+👉 [View Image](visuals/kmeans_cluster_scatter.png)
 
-chess_anomaly_detection_thesis/
-│
-├── README.md
-│
-├── thesis_summary.md
-├── thesis_full.pdf                     # optional
-│
-├── notebooks/
-│   └── chess_anomaly_detection.ipynb
-│
-├── data/
-│   ├── sample_dataset.csv
-│   └── links.txt
-│
-├── visuals/
-│   ├── isolation_forest_anomaly_distribution.png
-│   ├── kmeans_cluster_scatter.png
-│   ├── elo_white_vs_black_scatter.png
-│   └── other_visual_files.png
-│
-└── src/                                # optional (scripts)
-    └── anomaly_detection.py            # optional
+### 3️⃣ Elo White vs Elo Black with Anomaly Highlighting  
+👉 [View Image](visuals/elo_white_vs_black_scatter.png)
+
+---
+
+## 📂 Repository Structure
 
