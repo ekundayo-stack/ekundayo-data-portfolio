@@ -43,7 +43,7 @@ Below are the three most important visualisations generated during this project.
 👉 [View Image](visuals/k_means.png)
 
 ### 3️⃣ Elo White vs Elo Black with Anomaly Highlighting  
-👉 [View Image](visuals/isolation_forest_elo_white_v_elo_black_scatter.png)
+👉 [View Image](visuals/isolation_forest_elo_white_v_elo_black.png)
 
 ---
 
