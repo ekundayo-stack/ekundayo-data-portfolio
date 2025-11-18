@@ -39,8 +39,8 @@ Below are the three most important visualisations generated during this project.
 ### 1️⃣ Isolation Forest — Anomaly Score Distribution  
 👉 [View Image](visuals/isolation_forest_anomaly_score_distribution.png)
 
-### 2️⃣ K-Means Cluster Scatter Plot  
-👉 [View Image](visuals/k_means.png)
+### 2️⃣ K-Means Cluster Move White v Black move  
+👉 [View Image](visuals/k_means_clustering_flagged_move_white_v_black.png)
 
 ### 3️⃣ Elo White vs Elo Black with Anomaly Highlighting  
 👉 [View Image](visuals/isolation_forest_elo_white_v_elo_black.png)
