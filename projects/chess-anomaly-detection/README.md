@@ -9,7 +9,7 @@
 ![Anomaly Score Distribution](visuals/anomaly_distribution.png)
 
 ### K-Means Clustering — Elo Distribution
-![KMeans](visuals/kmeans_clustering_elos.png)
+![KMeans](projects/chess-anomaly-detection/visuals/k_means_clustering_elo_white_elo_black.png)
 
 ## 📁 Dataset
 Note: Due to size limitations, only a sample (10,000 rows) is included in this repository.  
