@@ -1,1 +1,6 @@
+## 📁 Dataset
+Note: Due to size limitations, only a sample (10,000 rows) is included in this repository.  
+The full dataset can be downloaded from the original source below:
+
+🔗 Kaggle dataset: https://www.kaggle.com/datasets/brieucdandoy/chess-cheating-dataset
 
