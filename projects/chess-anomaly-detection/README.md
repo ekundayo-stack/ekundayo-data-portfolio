@@ -9,11 +9,11 @@ Click below to view the full implementation:
 Dataset Folder in Repository
 
 👉 Open Dataset Folder
-(projects/chess-anomaly-detection/dataset)
+
 Original Source Dataset
 
 This dataset is publicly available on Kaggle:
-👉 Link provided inside data/links.txt
+👉 Link provided inside(dataset/links.txt)
 
 📊 Key Visualisations
 
