@@ -3,7 +3,8 @@
 ## 📊 Key Visualisations
 
 ### Isolation Forest — Elo White vs Elo Black
-![Elo Comparison](visuals/isolation_forest_elo_white_vs_black.png)
+![Elo Comparison](visuals
+/isolation_forest_elo_white_v_elo_black.png)
 
 ### Anomaly Score Distribution
 ![Anomaly Score Distribution](visuals/anomaly_distribution.png)
