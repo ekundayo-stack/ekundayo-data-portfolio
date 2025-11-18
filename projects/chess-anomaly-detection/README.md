@@ -9,12 +9,12 @@ The analysis is based on a cleaned dataset containing player Elo, flagged engine
 ## 📘 Project Files
 
 ### 🔍 **Notebook (Full Implementation)**
-👉 [Open Notebook](notebooks/chess_anomaly_detection.ipynb)
+👉 [Open Notebook](notebooks/msc_notebook.ipynb)
 
 ### 📝 **Detailed Thesis Summary**
 👉 [Read thesis_summary.md](thesis_summary.md)
 
-### 📚 **Full Thesis PDF** (optional)
+### 📚 **Full Thesis PDF**
 👉 [Download thesis_full.pdf](thesis_full.pdf)
 
 ---
@@ -37,13 +37,13 @@ Download link can be found here:
 Below are the three most important visualisations generated during this project.
 
 ### 1️⃣ Isolation Forest — Anomaly Score Distribution  
-👉 [View Image](visuals/isolation_forest_anomaly_distribution.png)
+👉 [View Image](visuals/isolation_forest_anomaly_score_distribution.png)
 
 ### 2️⃣ K-Means Cluster Scatter Plot  
-👉 [View Image](visuals/kmeans_cluster_scatter.png)
+👉 [View Image](visuals/k_means.png)
 
 ### 3️⃣ Elo White vs Elo Black with Anomaly Highlighting  
-👉 [View Image](visuals/elo_white_vs_black_scatter.png)
+👉 [View Image](visuals/isolation_forest_elo_white_v_elo_black_scatter.png)
 
 ---
 
