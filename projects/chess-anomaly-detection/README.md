@@ -9,7 +9,7 @@ The analysis is based on a cleaned dataset containing player Elo, flagged engine
 ## 📘 Project Files
 
 ### 🔍 **Notebook (Full Implementation)**
-👉 [Open Notebook](notebooks/msc_notebook.ipynb)
+👉 [Open Notebook](notebook/msc_notebook.ipynb)
 
 ### 📝 **Detailed Thesis Summary**
 👉 [Read thesis_summary.md](thesis_summary.md)
