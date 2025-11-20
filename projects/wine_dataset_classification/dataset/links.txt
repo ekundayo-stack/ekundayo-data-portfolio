@@ -1,1 +1,4 @@
+## 📁 Dataset
+The full dataset can be downloaded from the original source below:
 
+🔗 Kaggle dataset: https://www.kaggle.com/datasets/alizabrand/wine-dataset-quantity
