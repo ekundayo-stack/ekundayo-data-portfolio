@@ -1,77 +1,225 @@
-# 🍷 Wine Quality Classification with Machine Learning
+🍷 Wine Quality Classification Using Machine Learning
 
-This project uses XGBoost and LightGBM machine learning to predict winary location based on quality and physicochemical properties (e.g. acidity, ash, magnesium). It was built using a Kaggle dataset and focuses on model comparison, interpretability, and practical recommendations for application of models on classification tasks.
+This project applies supervised machine learning techniques to classify wines into three quality categories based on their physicochemical properties. It explores end-to-end model development — from exploratory data analysis to hyperparameter tuning, feature importance evaluation, and overfitting mitigation.
 
----
+The dataset is a small Kaggle dataset (178 samples), making this a strong demonstration of careful model validation and the challenges of training on limited data.
 
-## 🎯 Project Motivation
+🎯 Project Motivation
 
-I undertook this project to:
+I undertook this project to strengthen my skills in:
 
-- Practice end-to-end **classification modelling** on a real dataset.
-- Strengthen my skills in **EDA, feature engineering, and model evaluation**.
-- Build a clear, portfolio-ready example of how I turn raw data into **relevant insights**.
+Supervised classification modelling
 
----
+Data preprocessing, EDA, and outlier analysis
 
-## 📊 Dataset
+Comparing multiple algorithms (LightGBM, XGBoost)
 
-- **Source:** Kaggle – Wine Quality dataset  
-- **Observations:** ~ 179 samples and 14 columns 
-- **Features:** physicochemical measurements such as:
-  - malic_acid, ash, alcalinity_of_ash
-  - magnesium, total_phenols, flavanoids
-  - nonflavanoid_phenols, proanthocyanins, color_intensity
-  - hue, od280/od315_of_diluted_wines, proline
+Hyperparameter tuning with GridSearchCV + StratifiedKFold
 
-- **Target:** Winery Location (converted into a classification problem: e.g. *0*, *1*, *2* locations).
+Model interpretability through feature importance
 
-Any preprocessing steps:
-- Handled missing values (if any)
-- Removed/treated outliers
-- Scaled numerical features (e.g. StandardScaler / MinMaxScaler)
-- Encoded target classes
+Detecting and mitigating overfitting
 
----
+This project adds a clean, structured classification example to my GitHub portfolio.
 
-## 🧠 Methods & Models
+📂 Repository Structure
+wine-quality-classification/
+│── dataset/
+│── notebook/
+│── visuals/
+│── models/ (optional)
+│── README.md
 
-Key steps:
+📊 Dataset Overview
 
-1. **Exploratory Data Analysis (EDA)**
-   - Distribution plots, correlations, class balance
-   - Relationship between alcohol, acidity and quality
+Rows: 178
 
-2. **Feature Engineering**
-   - Optional: created combined features (e.g. acidity ratios)
-   - Dealt with class imbalance (e.g. class weighting / resampling)
+Features: 13 physicochemical properties
 
-3. **Models Tested**
-   - Tree-based: XGBoost / Gradient Boosting, Light_GBM
+Target: 3 wine classes (0, 1, 2)
 
-4. **Evaluation Metrics**
-   - Accuracy, Precision, Recall, F1-score
-   - Confusion matrix
-   - Cross-validation scores
+Most common class: Class 1 (39.89%)
 
----
+All columns contain valid, non-missing values. Outliers were examined using IQR and visualized through boxplots.
 
-## 🏆 Results
+Example features:
 
-- Best model: **[XGBoost]**
-- Test Accuracy: **97.2%**
-- Macro F1-score: **0.97**
-- Key insights:
-  - [Example] Higher alcohol and balanced acidity are strong indicators of higher-quality wine.
-  - [Example] Model performance improved after handling class imbalance and tuning hyperparameters.
+Alcohol
 
-You can find the detailed implementation and analysis in the notebook:
+Malic Acid
 
-👉 `notebook/wine_quality_classification.ipynb`
+Proline
 
-Important visuals are saved in:
+Color Intensity
 
-👉 `visuals/` (confusion matrices, feature importance, EDA plots)
+Flavanoids
 
----
+Hue
 
+OD280/OD315 of diluted wines
+
+🔎 Exploratory Data Analysis (EDA)
+
+The notebook includes:
+
+Summary statistics (df.describe())
+
+Class distribution
+
+Distribution plots (histograms + KDE)
+
+Outlier detection using IQR
+
+Boxplots to highlight skewness
+
+Correlation insights
+
+These analyses revealed that variables like color_intensity, proline, and flavanoids show strong separation patterns across the target classes.
+
+🧠 Modelling Approach
+Train-Test Split
+
+80/20 split
+
+Stratified to preserve class balance
+
+Models Trained
+
+XGBoost (XGBClassifier)
+
+LightGBM (LGBMClassifier)
+
+Performance (Before Tuning)
+Model	Accuracy
+XGBoost	97.22%
+LightGBM	100%
+
+The perfect accuracy suggested likely overfitting, motivating further investigation.
+
+⚙️ Hyperparameter Tuning (LightGBM)
+
+Performed using:
+
+GridSearchCV
+
+5-fold StratifiedKFold
+
+729 hyperparameter combinations
+
+Best Parameters Identified:
+
+learning_rate: 0.05
+max_depth: 5
+n_estimators: 100
+num_leaves: 20
+reg_alpha: 0
+reg_lambda: 0
+
+
+Best CV Accuracy: 97.91%
+Test Accuracy after tuning: 100%
+
+Despite tuning, 100% test accuracy still indicates likely overfitting due to the very small dataset size.
+
+🔍 Feature Importance Analysis
+LightGBM – Top Features
+Feature	Importance
+color_intensity	306
+proline	235
+flavanoids	198
+alcohol	182
+od280/od315_of_diluted_wines	126
+XGBoost – Top Features
+Feature	Importance
+flavanoids	0.2118
+color_intensity	0.1809
+proline	0.1747
+od280/od315_of_diluted_wines	0.1651
+magnesium	0.1109
+
+Consistent predictors across both models:
+
+Color Intensity
+
+Proline
+
+Flavanoids
+
+These features are reliable indicators of wine class.
+
+📈 Visuals Included
+
+Place these in your /visuals folder:
+
+Distribution histograms
+
+Boxplots
+
+Correlation heatmap
+
+Confusion matrices (LightGBM + XGBoost)
+
+Feature importance bar charts
+
+Example placeholders to reference in README:
+
+![Confusion Matrix – LightGBM](./visuals/lgbm_confusion_matrix.png)
+![Feature Importances – XGBoost](./visuals/xgb_feature_importance.png)
+
+⚠️ Overfitting Analysis & Mitigation Strategies
+
+The small dataset size (178 samples) makes perfect accuracy suspicious.
+Overfitting is likely even with stratification and tuning.
+
+Strategies Used
+
+5-fold Stratified Cross-Validation
+
+Regularization (L1/L2)
+
+Model complexity limits (max_depth, num_leaves)
+
+Hyperparameter tuning grid search
+
+Further Strategies Recommended
+
+Nested cross-validation for more reliable evaluation
+
+Stronger regularization for XGBoost & LightGBM
+
+Simpler model architectures
+
+Feature selection guided by importance scores
+
+Increasing training data, which is the most reliable fix
+
+📝 Summary of Key Findings
+🔹 Critical Features
+
+Both models identified color_intensity, proline, and flavanoids as robust, high-signal predictors.
+
+🔹 Model Performance
+
+LightGBM achieved 100% accuracy after tuning
+
+XGBoost reached 97.22%
+
+Perfect results on small datasets require caution — high risk of overfitting
+
+🔹 Next Steps
+
+Implement nested CV
+
+Explore simpler models
+
+Engineer additional features
+
+Collect or augment data
+
+📘 Notebook & Files
+
+Full notebook: notebook/winedataset.ipynb
+
+All plots in: visuals/
+
+Dataset in: dataset/wine_dataset.csv
