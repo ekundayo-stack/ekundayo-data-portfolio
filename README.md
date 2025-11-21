@@ -23,16 +23,16 @@ This portfolio showcases the projects that reflect my analytical skills, tools, 
 
 ---
 
-## 2. 🏘 Real Estate Price Forecasting — *Time Series + Power BI*
-**Goal:** Predict real estate prices & trends for better investment decisions.  
+## 2.🍷 Wine Quality Classification Using  — *Machine Learning (XGBoost + LightGBMachine)*
+**Goal:** Correctly classify wines based on provided information.  
 **Highlights:**
-- Built forecasting model (Prophet / ARIMA).  
-- Cleaned and structured datasets using Python + SQL.  
-- Designed a Power BI dashboard to visualise pricing trends and predictions.  
-- Applied domain knowledge from real estate operations to boost accuracy.
+- Built ML models (LightGBM overfitted while XGB worked well).  
+- Cleaned and structured datasets using Python.  
+- Evaluated models with precision/recall due to class imbalance.  
+- Created interpretable visual insights showing suspicious behaviour patterns.
 
-🔗 **Project Folder:** `/projects/real-estate-price-forecasting/`  
-📊 *Tech:* Python, Power BI, Pandas, Prophet  
+🔗 **Project Folder:** `/projects/wine_dataset_classification/`  
+📊 *Tech:* Python, Scikit-learn, Pandas, Matplotlib  
 
 ---
 
