@@ -1,10 +1,10 @@
-🍷 Wine Quality Classification Using Machine Learning
+# 🍷 Wine Quality Classification Using Machine Learning
 
 This project applies supervised machine learning techniques to classify wines into three quality categories based on their physicochemical properties. It explores end-to-end model development — from exploratory data analysis to hyperparameter tuning, feature importance evaluation, and overfitting mitigation.
 
 The dataset is a small Kaggle dataset (178 samples), making this a strong demonstration of careful model validation and the challenges of training on limited data.
 
-🎯 Project Motivation
+## 🎯 Project Motivation
 
 I undertook this project to strengthen my skills in:
 
@@ -30,7 +30,7 @@ wine-quality-classification/
 │── models/ (optional)
 │── README.md
 
-📊 Dataset Overview
+## 📊 Dataset Overview
 
 Rows: 178
 
@@ -58,7 +58,7 @@ Hue
 
 OD280/OD315 of diluted wines
 
-🔎 Exploratory Data Analysis (EDA)
+## 🔎 Exploratory Data Analysis (EDA)
 
 The notebook includes:
 
@@ -76,7 +76,7 @@ Correlation insights
 
 These analyses revealed that variables like color_intensity, proline, and flavanoids show strong separation patterns across the target classes.
 
-🧠 Modelling Approach
+## 🧠 Modelling Approach
 Train-Test Split
 
 80/20 split
@@ -96,7 +96,7 @@ LightGBM	100%
 
 The perfect accuracy suggested likely overfitting, motivating further investigation.
 
-⚙️ Hyperparameter Tuning (LightGBM)
+## ⚙️ Hyperparameter Tuning (LightGBM)
 
 Performed using:
 
@@ -121,7 +121,7 @@ Test Accuracy after tuning: 100%
 
 Despite tuning, 100% test accuracy still indicates likely overfitting due to the very small dataset size.
 
-🔍 Feature Importance Analysis
+## 🔍 Feature Importance Analysis
 LightGBM – Top Features
 Feature	Importance
 color_intensity	306
@@ -147,7 +147,7 @@ Flavanoids
 
 These features are reliable indicators of wine class.
 
-📈 Visuals Included
+## 📈 Visuals Included
 
 Place these in your /visuals folder:
 
@@ -166,7 +166,7 @@ Example placeholders to reference in README:
 ![Confusion Matrix – LightGBM](./visuals/lgbm_confusion_matrix.png)
 ![Feature Importances – XGBoost](./visuals/xgb_feature_importance.png)
 
-⚠️ Overfitting Analysis & Mitigation Strategies
+## ⚠️ Overfitting Analysis & Mitigation Strategies
 
 The small dataset size (178 samples) makes perfect accuracy suspicious.
 Overfitting is likely even with stratification and tuning.
@@ -193,7 +193,7 @@ Feature selection guided by importance scores
 
 Increasing training data, which is the most reliable fix
 
-📝 Summary of Key Findings
+## 📝 Summary of Key Findings
 🔹 Critical Features
 
 Both models identified color_intensity, proline, and flavanoids as robust, high-signal predictors.
@@ -216,7 +216,7 @@ Engineer additional features
 
 Collect or augment data
 
-📘 Notebook & Files
+## 📘 Notebook & Files
 
 Full notebook: notebook/winedataset.ipynb
 
