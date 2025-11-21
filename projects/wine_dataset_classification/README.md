@@ -19,10 +19,12 @@ I undertook this project to:
 - **Source:** Kaggle – Wine Quality dataset  
 - **Observations:** ~ 179 samples and 14 columns 
 - **Features:** physicochemical measurements such as:
-  - Fixed acidity, volatile acidity, citric acid
-  - Residual sugar, chlorides, sulphates
-  - Alcohol, pH, density  
-- **Target:** Wine quality score (converted into a classification problem: e.g. *low*, *medium*, *high* quality).
+  - malic_acid, ash, alcalinity_of_ash
+  - magnesium, total_phenols, flavanoids
+  - nonflavanoid_phenols, proanthocyanins, color_intensity
+  - hue, od280/od315_of_diluted_wines, proline
+
+- **Target:** Winery Location (converted into a classification problem: e.g. *0*, *1*, *2* locations).
 
 Any preprocessing steps:
 - Handled missing values (if any)
@@ -45,9 +47,7 @@ Key steps:
    - Dealt with class imbalance (e.g. class weighting / resampling)
 
 3. **Models Tested**
-   - Baseline: Logistic Regression
-   - Tree-based: Random Forest, XGBoost / Gradient Boosting
-   - (Include any others you used)
+   - Tree-based: XGBoost / Gradient Boosting, Light_GBM
 
 4. **Evaluation Metrics**
    - Accuracy, Precision, Recall, F1-score
@@ -58,9 +58,9 @@ Key steps:
 
 ## 🏆 Results
 
-- Best model: **[Model name]**
-- Test Accuracy: **XX%**
-- Macro F1-score: **XX**
+- Best model: **[XGBoost]**
+- Test Accuracy: **97.2%**
+- Macro F1-score: **0.97**
 - Key insights:
   - [Example] Higher alcohol and balanced acidity are strong indicators of higher-quality wine.
   - [Example] Model performance improved after handling class imbalance and tuning hyperparameters.
