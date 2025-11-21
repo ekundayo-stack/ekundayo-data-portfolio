@@ -22,14 +22,6 @@ Detecting and mitigating overfitting
 
 This project adds a clean, structured classification example to my GitHub portfolio.
 
-📂 Repository Structure
-wine-quality-classification/
-│── dataset/
-│── notebook/
-│── visuals/
-│── models/ (optional)
-│── README.md
-
 ## 📊 Dataset Overview
 
 Rows: 178
@@ -94,7 +86,7 @@ Model	Accuracy
 XGBoost	97.22%
 LightGBM	100%
 
-The perfect accuracy suggested likely overfitting, motivating further investigation.
+The perfect accuracy suggested likely overfitting (this could be due to the small dataset in respect to LightGBM), motivating further investigation.
 
 ## ⚙️ Hyperparameter Tuning (LightGBM)
 
@@ -149,8 +141,6 @@ These features are reliable indicators of wine class.
 
 ## 📈 Visuals Included
 
-Place these in your /visuals folder:
-
 Distribution histograms
 
 Boxplots
@@ -160,8 +150,6 @@ Correlation heatmap
 Confusion matrices (LightGBM + XGBoost)
 
 Feature importance bar charts
-
-Example placeholders to reference in README:
 
 ![Confusion Matrix – LightGBM](./visuals/lgbm_confusion_matrix.png)
 ![Feature Importances – XGBoost](./visuals/xgb_feature_importance.png)
