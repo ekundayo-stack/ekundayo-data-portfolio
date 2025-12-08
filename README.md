@@ -38,7 +38,9 @@ This portfolio showcases the projects that reflect my analytical skills, tools, 
 
 ## 3. 💰 Financial Transactions Analysis — Fraud Detection & Behavioural Insights
 **Goal:** Analyse financial transactions to detect fraud patterns, understand customer behaviour, and uncover key risk indicators through exploratory data analysis and feature relationships.  
+
 **Highlights:**
+
 -Performed step-by-step data understanding, including dataset shape, descriptive statistics, data types, duplicates, and missing-value checks.
 -Cleaned and prepared the dataset by dropping irrelevant and duplicated columns, handling outliers, and structuring features for analysis.
 
