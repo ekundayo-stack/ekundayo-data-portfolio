@@ -43,7 +43,7 @@ This portfolio showcases the projects that reflect my analytical skills, tools, 
 - Trained sentiment classifier using Logistic Regression / Naïve Bayes.  
 - Visualised sentiment trends with word clouds and bar charts.  
 
-🔗 **Project Folder:** `/projects/sentiment-analysis-nlp/`  
+🔗 **Project Folder:** `/projects/financial_dataset_classification/`  
 🧠 *Tech:* Python, NLTK / spaCy, Scikit-learn  
 
 ---
