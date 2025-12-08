@@ -46,19 +46,28 @@ This portfolio showcases the projects that reflect my analytical skills, tools, 
 -Cleaned and prepared the dataset by dropping irrelevant and duplicated columns, handling outliers, and structuring features for analysis.
 
 Conducted detailed exploratory data analysis (EDA):
+
 -Distribution plots (histograms, KDEs) revealing spending patterns across users.
+
 -Identified that most transactions are normal, concentrated around mid-range amounts.
+
 -Fraudulent transactions are rare but often involve significantly higher transaction amounts.
 
+
 Analysed country-level fraud distribution, showing:
+
 -Several countries have no fraud cases.
+
 -Some regions show clear spikes in fraudulent activity, including a country with the highest fraud count (~100).
 
 Explored feature relationships using scatterplots, pairplots, and correlation heatmaps:
+
 -Highlighted which numerical features correlate strongly with fraud.
+
 -Found clear separations between fraud and non-fraud clusters at high transaction amounts.
 
 Created interpretable visual insights:
+
 - Log-scaled histograms showing how fraud disproportionately occurs at large amounts.
 - Country-by-country fraud comparison plots.
 - Correlation matrices revealing fraud-linked features.
