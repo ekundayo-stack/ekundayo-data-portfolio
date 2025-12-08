@@ -42,6 +42,7 @@ This portfolio showcases the projects that reflect my analytical skills, tools, 
 **Highlights:**
 
 -Performed step-by-step data understanding, including dataset shape, descriptive statistics, data types, duplicates, and missing-value checks.
+
 -Cleaned and prepared the dataset by dropping irrelevant and duplicated columns, handling outliers, and structuring features for analysis.
 
 Conducted detailed exploratory data analysis (EDA):
