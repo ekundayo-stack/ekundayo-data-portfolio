@@ -88,7 +88,7 @@ Created interpretable visual insights:
 - Visualised regression lines and error reduction across training iterations.
 - Strengthened understanding of core ML concepts underlying libraries such as scikit-learn.
 
-📂 **Project Folder:** `/projects/manual-linear-regression/`  
+📂 **Project Folder:** `/projects/linear_regression_model/`  
 🛠 **Tech:** Python, NumPy, Pandas, Matplotlib
 
 ---
