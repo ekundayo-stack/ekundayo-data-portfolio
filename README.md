@@ -77,16 +77,19 @@ Created interpretable visual insights:
 
 ---
 
-## 4. 📈 Event & Operations Analytics Dashboard — *Excel + BI*
-**Goal:** Improve event decision-making using historical data & KPIs.  
-**Highlights:**
-- Built Excel-based event calendar & KPI tracking system.  
-- Analysed attendance, revenue per event, and demographic insights.  
-- Supported strategy that increased engagement by 75%.  
-- Created visuals showing peak days, event profitability, and customer clusters.
+### **4. 📈 Building Linear Regression from Scratch — Machine Learning Fundamentals**
 
-🔗 **Project Folder:** `/projects/operations-event-analytics/`  
-📊 *Tech:* Excel, Power BI, SQL  
+**Goal:** Understand and implement linear regression from first principles without relying on high-level machine learning libraries.
+
+**Highlights:**
+- Implemented **linear regression manually** using mathematical foundations rather than pre-built models.
+- Built **gradient descent** from scratch to optimise model parameters.
+- Demonstrated how loss functions and learning rates affect convergence.
+- Visualised regression lines and error reduction across training iterations.
+- Strengthened understanding of core ML concepts underlying libraries such as scikit-learn.
+
+📂 **Project Folder:** `/projects/manual-linear-regression/`  
+🛠 **Tech:** Python, NumPy, Pandas, Matplotlib
 
 ---
 
