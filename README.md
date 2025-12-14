@@ -93,15 +93,20 @@ Created interpretable visual insights:
 
 ---
 
-## 5. ⚙️ Excel Automation & KPI Tracker — *Process Optimization*
-**Goal:** Automate repetitive reporting tasks and reduce human error.  
+**5. 🏠 Housing Price Prediction System — Machine Learning & Model Optimisation**
+
+**Goal:** Build a robust regression model to predict housing prices using structured data preprocessing, feature scaling, and hyperparameter optimisation.
+
 **Highlights:**
-- Designed templates and formulas for automatic data processing.  
-- Reduced reporting time by 50–60%.  
-- Improved accuracy and consistency in weekly reports.
+- Performed thorough **data cleaning and preprocessing**, including handling missing values and preparing numerical features for modelling.
+- Applied **feature scaling** to ensure consistent model performance across variables with different magnitudes.
+- Implemented multiple regression models and established a strong baseline.
+- Used **GridSearchCV** to systematically tune hyperparameters and improve model generalisation.
+- Evaluated model performance using regression metrics to assess prediction accuracy.
+- Demonstrated how preprocessing choices and parameter tuning directly impact model performance.
 
 🔗 **Project Folder:** `/projects/excel-automation-kpi-tracker/`  
-🛠 *Tech:* Excel, Power Query  
+🛠 *Tech:* Python, Pandas, NumPy, Scikit-learn, Matplotlib 
 
 ---
 
