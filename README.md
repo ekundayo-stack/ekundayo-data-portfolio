@@ -105,7 +105,7 @@ Created interpretable visual insights:
 - Evaluated model performance using regression metrics to assess prediction accuracy.
 - Demonstrated how preprocessing choices and parameter tuning directly impact model performance.
 
-🔗 **Project Folder:** `/projects/excel-automation-kpi-tracker/`  
+🔗 **Project Folder:** `/projects/house_price_predictor_system/`  
 🛠 *Tech:* Python, Pandas, NumPy, Scikit-learn, Matplotlib 
 
 ---
